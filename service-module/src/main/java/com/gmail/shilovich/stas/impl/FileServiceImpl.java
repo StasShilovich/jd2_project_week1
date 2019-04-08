@@ -23,7 +23,7 @@ public class FileServiceImpl implements FileService {
         List<String> list = stringDAO.getStringList(filename);
         String rezult = "";
         for (String line : list) {
-            rezult += stringService.add(line);
+            rezult += stringService.add(line)+" ";
         }
         return rezult;
     }

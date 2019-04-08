@@ -24,7 +24,7 @@ public class StringDAOImpl implements StringDAO {
         List<String> stringList = new ArrayList<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName))) {
             String line = bufferedReader.readLine();
-            while (!line.isEmpty()) {
+            while (line!=null) {
                 stringList.add(line);
                 line = bufferedReader.readLine();
             }
